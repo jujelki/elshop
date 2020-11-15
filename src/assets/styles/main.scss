@@ -1,0 +1,32 @@
+@import "imports.scss";
+
+html {
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo__pic {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}

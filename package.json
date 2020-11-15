@@ -1,0 +1,29 @@
+{
+  "name": "elshop",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel src/pages/*.html --out-dir=tmp",
+    "start:prototype": "parcel src/prototype.html --out-dir=tmp",
+    "build": "parcel build src/index.html --out-dir=dist --public-url='./'",
+    "lint:styles": "stylelint **/*.scss"
+  },
+  "keywords": [],
+  "author": "",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "latest",
+    "autoprefixer": "9.8",
+    "husky": "^4.3.0",
+    "node-sass": "^4.14.1",
+    "parcel-bundler": "latest",
+    "parcel-plugin-svg-sprite": "^1.4.1",
+    "postcss-modules": "latest",
+    "posthtml-include": "^1.6.0",
+    "stylelint": "^13.7.2",
+    "stylelint-config-standard": "^20.0.0"
+  },
+  "dependencies": {
+    "core-js": "latest"
+  }
+}
