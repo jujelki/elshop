@@ -1,0 +1,97 @@
+.suggestions {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 3vw;
+  grid-template-rows: 50vh;
+  padding: 40px 4rem;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 40vh;
+    grid-column-gap: 3vw;
+  }
+}
+
+.suggestions__item-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url(/../assets/pics/black-hoodie.png) no-repeat;
+  background-size: cover;
+
+  @media (max-width: 1200px) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-position-x: 50%;
+  }
+}
+
+.suggestions__item-2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url(/../assets/pics/basic_t-shirt.png) no-repeat;
+  background-size: cover;
+
+  @media (max-width: 1200px) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}
+
+.suggestions__item-3 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url(/../assets/pics/person-sale-sign.png) no-repeat;
+  background-size: cover;
+
+  @media (max-width: 1200px) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+}
+
+.suggestions__card {
+  position: relative;
+}
+
+.suggestions__content {
+  position: absolute;
+  bottom: 36px;
+  left: 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 125px;
+  max-width: 200px;
+
+  p {
+    margin: 0;
+  }
+
+  @media (max-width: 1200px) {
+  }
+}
+
+.suggestions__title {
+  color: var(--c-white);
+  font-size: 25px;
+  font-weight: 400;
+
+  @media (max-width: 1200px) {
+    font-size: 18px;
+  }
+}
+
+.suggestion__button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 30px;
+  background-color: var(--c-white);
+  font-size: inherit;
+
+  &:hover {
+    background-color: var(--c-lightgray50);
+  }
+}
