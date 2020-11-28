@@ -24,6 +24,9 @@
     "stylelint-config-standard": "^20.0.0"
   },
   "dependencies": {
-    "core-js": "latest"
+    "core-js": "latest",
+    "jquery": "^3.5.1",
+    "owl.carousel": "^2.3.4",
+    "slick-carousel": "^1.8.1"
   }
 }
