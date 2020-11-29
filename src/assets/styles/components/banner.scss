@@ -1,188 +1,167 @@
 .underlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../pics/bggirl.jpg) no-repeat;
-    background-size: cover;
-    @media (max-width: 768px) {
-        display: none;
-    }
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../pics/bggirl.jpg) no-repeat;
+  background-size: cover;
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 .jumbotron {
 }
 
 .sales-banner-wr {
-    margin-top: 6vw;
-    margin-left: 12vw;
+  margin-top: 6vw;
+  margin-left: 12vw;
 
-    @media (max-width: 920px) {
-        margin-top: 12vw;
-    }
+  @media (max-width: 920px) {
+    margin-top: 12vw;
+  }
 
-    @media (max-width: 768px) {
-        height: 100vw;
-        max-width: 100%;
-        margin: 0;
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
-            url(../pics/mainbg-mobile.png) no-repeat;
-        background-size: cover;
-    }
+  @media (max-width: 768px) {
+    height: 100vw;
+    max-width: 100%;
+    margin: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+      url(../pics/mainbg-mobile.png) no-repeat;
+    background-size: cover;
+  }
 }
 .sales-banner {
-    display: flex;
-    max-width: 365px;
-    width: 100%;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  max-width: 365px;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
 
-    @media (max-width: 768px) {
-        margin-left: 10vw;
-        padding-top: 45vw;
-    }
+  @media (max-width: 768px) {
+    margin-left: 10vw;
+    padding-top: 45vw;
+  }
 
-    @media (max-width: 560px) {
-        max-width: 260px;
-        padding-top: 50vw;
-    }
+  @media (max-width: 560px) {
+    max-width: 260px;
+    padding-top: 50vw;
+  }
 }
 
 .sales-banner__text {
-    margin: 0;
-    color: var(--c-white);
-    font-size: 66px;
-    font-weight: 700;
-    line-height: 77px;
+  margin: 0;
+  color: var(--c-white);
+  font-size: 66px;
+  font-weight: 700;
+  line-height: 77px;
 
-    @media (max-width: 920px) {
-        font-size: 60px;
-        line-height: 58px;
-    }
+  @media (max-width: 920px) {
+    font-size: 60px;
+    line-height: 58px;
+  }
 
-    @media (max-width: 768px) {
-        font-size: 43px;
-        line-height: 42px;
-    }
+  @media (max-width: 768px) {
+    font-size: 43px;
+    line-height: 42px;
+  }
 
-    @media (max-width: 560px) {
-        font-size: 36px;
-        line-height: 34px;
-    }
+  @media (max-width: 560px) {
+    font-size: 36px;
+    line-height: 34px;
+  }
 }
 
 .shop-button {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    svg {
-        height: 15px;
-        width: 20px;
-        position: absolute;
-        top: calc((100% - 15px) / 2);
-        right: calc((100% - 20px) / 2);
+  svg {
+    height: 15px;
+    width: 20px;
+    position: absolute;
+    top: calc((100% - 15px) / 2);
+    right: calc((100% - 20px) / 2);
+  }
+
+  span {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--c-white);
+    border-bottom: 1px solid transparent;
+    text-transform: uppercase;
+
+    &:hover {
+      border-bottom: 1px solid var(--c-white);
     }
-
-    span {
-        font-size: 13px;
-        font-weight: 600;
-        color: var(--c-white);
-        border-bottom: 1px solid transparent;
-        text-transform: uppercase;
-
-        &:hover {
-            border-bottom: 1px solid var(--c-white);
-        }
-    }
+  }
 }
 
 .shop-button__arrow {
-    position: relative;
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-    border-radius: 50%;
-    background-color: var(--c-orange);
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: var(--c-orange);
 
-    &:hover {
-        background-color: #fba53b;
-    }
+  &:hover {
+    background-color: #fba53b;
+  }
 }
 
-.advantages-wr {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 120px;
-    display: flex;
-    align-items: center;
-    max-width: 70vw;
-    padding-left: 17vw;
-    background-color: var(--c-white);
-    border-top-right-radius: 20px;
+// .advantages-list {
+//     display: flex;
+//     align-items: top;
+//     padding: 0;
+//     list-style: none;
+// }
+// .advantages__item {
+//     display: flex;
+//     width: 100%;
+//     align-items: top;
+//     max-width: calc((100% / 3) - 10px);
+//     p {
+//         margin: 0;
+//     }
+// }
 
-    @media (max-width: 768px) {
-        display: none;
-    }
+// .advantages__icon {
+//     position: relative;
+//     height: 40px;
+//     min-width: 40px;
+//     border-radius: 30%;
+//     margin-right: 15px;
+//     background-color: var(--c-wheat);
 
-    @media (max-width: 920px) {
-        height: 80px;
-        padding-left: 7vw;
-    }
-}
-.advantages-list {
-    display: flex;
-    align-items: top;
-    padding: 0;
-    list-style: none;
-}
-.advantages__item {
-    display: flex;
-    width: 100%;
-    align-items: top;
-    max-width: calc((100% / 3) - 10px);
-    p {
-        margin: 0;
-    }
-}
+//     svg {
+//         position: absolute;
+//         top: calc((100% - 18px) / 2);
+//         right: calc((100% - 23px) / 2);
+//         width: 23px;
+//         height: 18px;
+//         fill: var(--c-orange);
+//     }
+// }
 
-.advantages__icon {
-    position: relative;
-    height: 40px;
-    min-width: 40px;
-    border-radius: 30%;
-    margin-right: 15px;
-    background-color: var(--c-wheat);
+// .advantages__title {
+//     color: var(--c-black);
+//     font-size: 14px;
+//     font-weight: 600;
 
-    svg {
-        position: absolute;
-        top: calc((100% - 18px) / 2);
-        right: calc((100% - 23px) / 2);
-        width: 23px;
-        height: 18px;
-        fill: var(--c-orange);
-    }
-}
+//     @media (max-width: 920px) {
+//         font-weight: 400;
+//     }
+// }
 
-.advantages__title {
-    color: var(--c-black);
-    font-size: 14px;
-    font-weight: 600;
+// .advantages__text {
+//     font-size: 12px;
+//     font-weight: 400;
+//     color: var(--c-darkgray130);
 
-    @media (max-width: 920px) {
-        font-weight: 400;
-    }
-}
-
-.advantages__text {
-    font-size: 12px;
-    font-weight: 400;
-    color: var(--c-darkgray130);
-
-    @media (max-width: 920px) {
-        display: none;
-    }
-}
+//     @media (max-width: 920px) {
+//         display: none;
+//     }
+// }

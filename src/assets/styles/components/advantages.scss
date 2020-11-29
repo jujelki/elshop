@@ -1,0 +1,144 @@
+.advantages-wr {
+  margin-left: -25px;
+  margin-right: -25px;
+}
+
+.advantages-wr--banner {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  max-width: 70vw;
+  padding-left: 17vw;
+  background-color: var(--c-white);
+  border-top-right-radius: 20px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  @media (max-width: 920px) {
+    height: 80px;
+    padding-left: 7vw;
+  }
+}
+
+.advantages-list,
+.advantages-list--banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  width: 100%;
+  list-style: none;
+}
+
+.advantages-list {
+  padding-left: 10px;
+  padding-right: 10px;
+
+  &--banner {
+    padding: 0;
+  }
+}
+.advantages__item,
+.advantages__item--banner {
+  width: 100%;
+}
+
+.advantages__item {
+  display: block;
+  //width: calc((100% - 60px) / 4);
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  &:not(:last-of-type) {
+    //padding-right: 5px;
+  }
+  p {
+    margin: 0;
+  }
+
+  &--banner {
+    display: flex;
+    width: 100%;
+    align-items: top;
+    max-width: calc((100% / 3) - 10px);
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.advantages__icon,
+.advantages__icon--banner {
+  position: relative;
+  border-radius: 30%;
+  margin-right: 15px;
+}
+.advantages__icon {
+  width: 71px;
+  height: 70px;
+  background-color: var(--c-lightgray30);
+
+  &:hover {
+    background-color: var(--c-wheat);
+  }
+
+  svg {
+    position: absolute;
+    top: calc((100% - 30px) / 2);
+    right: calc((100% - 40px) / 2);
+    width: 40px;
+    height: 30px;
+    fill: var(--c-black);
+
+    &:hover,
+    &:focus {
+      fill: var(--c-orange);
+    }
+  }
+
+  &--banner {
+    height: 40px;
+    min-width: 40px;
+    background-color: var(--c-wheat);
+
+    svg {
+      position: absolute;
+      top: calc((100% - 18px) / 2);
+      right: calc((100% - 23px) / 2);
+      width: 23px;
+      height: 18px;
+      fill: var(--c-orange);
+    }
+  }
+}
+
+.advantages__title,
+.advantages__title--banner {
+  color: var(--c-black);
+  font-size: 14px;
+  font-weight: 600;
+
+  @media (max-width: 920px) {
+    font-weight: 400;
+  }
+}
+
+.advantages__title {
+  padding: 15px 0 15px 0;
+}
+
+.advantages__text {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--c-darkgray130);
+
+  @media (max-width: 920px) {
+    display: none;
+  }
+}
