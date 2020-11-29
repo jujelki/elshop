@@ -1,43 +1,98 @@
 <header class="page-header">
-    <nav class="main-nav">
-        <a class="main-nav__list page-header__logo">
-            <div class="logo">
-                <svg class="logo__pic">
-                    <use href="../assets/pics/icons/logo.svg">
-                </svg>
-                <h1 class="page-header__title logo__title">E-shop</h1>
-            </div>
+  <nav class="main-nav">
+    <a class="main-nav__list page-header__logo">
+      <div class="logo">
+        <svg class="logo__pic">
+          <use href="../assets/pics/icons/logo.svg">
+        </svg>
+        <h1 class="page-header__title logo__title">E-shop</h1>
+      </div>
+    </a>
+    <ul class="main-nav__list site-list">
+      <li class="site-list__item"><a href="#">Man</a></li>
+      <li class="site-list__item"><a href="#">Woman</a></li>
+      <li class="site-list__item"><a href="#">Kids</a></li>
+    </ul>
+    <ul class="main-nav__list user-list">
+      <li class="user-list__item">
+        <form action="" class="page-header__search" autocomplete="off">
+          <input type="search" class="search-input">
+          <svg>
+            <use href="../assets/pics/icons/search.svg">
+          </svg>
+        </form>
+      </li>
+      <li class="user-list__item">
+        <a href="#">
+          <svg>
+            <use href="../assets/pics/icons/cart.svg">
+          </svg>
         </a>
-        <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a href="#">Man</a></li>
-            <li class="site-list__item"><a href="#">Woman</a></li>
-            <li class="site-list__item"><a href="#">Kids</a></li>
-        </ul>
-        <ul class="main-nav__list user-list">
-            <li class="user-list__item">
-                <form action="" class="page-header__search" autocomplete="off">
-                    <input type="search" class="search-input">
-                    <svg>
-                        <use href="../assets/pics/icons/search.svg">
-                    </svg>
-                </form>
-            </li>
-            <li class="user-list__item">
-                <a href="#">
-                    <svg>
-                        <use href="../assets/pics/icons/cart.svg">
-                    </svg>
-                </a>
-            </li>
-            <li class="user-list__item">
-                <a href="#">
-                    <svg>
-                        <use href="../assets/pics/icons/account.svg">
-                    </svg>
-                </a>
-            </li>
-        </ul>
-    </nav>
+      </li>
+      <li class="user-list__item">
+        <a href="#">
+          <svg>
+            <use href="../assets/pics/icons/account.svg">
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
 
-    <include src="src/partials/banner.html"></include>
+  <div class="jumbotron">
+    <div class="sales-banner-wr">
+      <div class="sales-banner">
+        <p class="sales-banner__text">Sale of the
+          summer
+          collection</p>
+        <a href="#" class="shop-button">
+          <div class="shop-button__arrow">
+            <svg>
+              <use href="../assets/pics/icons/arrow-left.svg">
+            </svg>
+          </div>
+          <span>Shop now</span>
+        </a>
+      </div>
+    </div>
+    <div class="advantages-wr--banner">
+      <ul class="advantages-list--banner">
+        <li class="advantages__item--banner">
+          <div class="advantages__icon--banner">
+            <svg>
+              <use href="../assets/pics/icons/auto.svg">
+            </svg>
+          </div>
+          <div class="advantages__message">
+            <p class="advantages__title--banner">Free Shipping</p>
+            <p class="advantages__text">On purchases over $199</p>
+          </div>
+        </li>
+        <li class="advantages__item--banner">
+          <div class="advantages__icon--banner">
+            <svg>
+              <use href="../assets/pics/icons/smile.svg">
+            </svg>
+          </div>
+          <div class="advantages__message">
+            <p class="advantages__title--banner">99% satisfied customers</p>
+            <p class="advantages__text">Our clients' opinions
+              speak for themselves</p>
+          </div>
+        </li>
+        <li class="advantages__item--banner">
+          <div class="advantages__icon--banner">
+            <svg>
+              <use href="../assets/pics/icons/shield.svg">
+            </svg>
+          </div>
+          <div class="advantages__message">
+            <p class="advantages__title--banner">Originality Guaranteed</p>
+            <p class="advantages__text">30 days warranty for each
+              product from our store</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
 </header>
