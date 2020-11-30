@@ -1,0 +1,41 @@
+.hot-products {
+  margin-left: -25px;
+  margin-right: -25px;
+}
+
+.hot-products-wr {
+}
+
+.hot-products_list {
+  display: flex;
+  justify-content: space-between;
+
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.hot-products_item {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  &--onsale {
+    position: relative;
+    &::before {
+      position: absolute;
+      top: 25px;
+      left: 33px;
+      content: "30%";
+      width: 52px;
+      height: 24px;
+      text-align: center;
+      border-radius: 15px;
+      color: var(--c-white);
+      background-color: var(--c-red);
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+}
