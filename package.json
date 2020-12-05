@@ -21,7 +21,8 @@
     "postcss-modules": "latest",
     "posthtml-include": "^1.6.0",
     "stylelint": "^13.7.2",
-    "stylelint-config-standard": "^20.0.0"
+    "stylelint-config-standard": "^20.0.0",
+    "postcss-preset-env": "^6.7.0"
   },
   "dependencies": {
     "core-js": "latest",
