@@ -1,5 +1,10 @@
 @import "imports.scss";
 
+@custom-media --sm (width <= 768px);
+@custom-media --m (min-width: 769px);
+@custom-media --xl (min-width: 1025px);
+@custom-media --xl-sm (width <= 1025px);
+
 html {
   box-sizing: border-box;
   font-family: Poppins, sans-serif;
@@ -51,4 +56,9 @@ a {
   font-size: 28px;
   font-weight: 300;
   text-align: center;
+}
+
+.button {
+  border-radius: 30px;
+  border: none;
 }
