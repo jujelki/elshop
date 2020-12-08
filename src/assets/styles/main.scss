@@ -1,10 +1,11 @@
 @import "imports.scss";
 
-@custom-media --xs (width <= 560px);
+@custom-media --xs (width <= 576px);
 @custom-media --sm (width <= 768px);
 @custom-media --m (min-width: 769px);
-@custom-media --xl (min-width: 1025px);
-@custom-media --xl-sm (width <= 1025px);
+@custom-media --l (min-width: 1025px);
+@custom-media --l-sm (width <= 1025px);
+@custom-media --xl (width => 1025px);
 
 html {
   box-sizing: border-box;
