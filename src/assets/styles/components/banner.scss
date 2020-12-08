@@ -9,22 +9,20 @@
   z-index: -1;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../pics/bggirl.jpg) no-repeat;
   background-size: cover;
-  @media (max-width: 768px) {
+  @media (--sm) {
     display: none;
   }
-}
-.jumbotron {
 }
 
 .sales-banner-wr {
   margin-top: 6vw;
-  margin-left: 12vw;
+  margin-left: calc(45px + 3vw);
 
-  @media (max-width: 920px) {
+  @media (--m) {
     margin-top: 12vw;
   }
 
-  @media (max-width: 768px) {
+  @media (--sm) {
     height: 100vw;
     max-width: 100%;
     margin: 0;
@@ -40,14 +38,14 @@
   flex-direction: column;
   justify-content: space-between;
 
-  @media (max-width: 768px) {
-    margin-left: 10vw;
+  @media (--sm) {
+    margin-left: calc(35px + 3vw);
     padding-top: 40vw;
   }
 
-  @media (max-width: 560px) {
+  @media (--xs) {
     max-width: 260px;
-    padding-top: 50vw;
+    padding-top: 40vw;
   }
 }
 
@@ -58,19 +56,19 @@
   font-weight: 700;
   line-height: 77px;
 
-  @media (max-width: 920px) {
+  @media (--m) {
     font-size: 60px;
     line-height: 58px;
   }
 
-  @media (max-width: 768px) {
+  @media (--sm) {
     font-size: 50px;
     line-height: 57px;
   }
 
-  @media (max-width: 560px) {
+  @media (--xs) {
     font-size: 36px;
-    line-height: 34px;
+    line-height: 48px;
   }
 }
 
