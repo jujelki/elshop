@@ -1,18 +1,12 @@
 .hot-products {
-  margin-left: -25px;
-  margin-right: -25px;
+  //margin-left: -25px;
+  //margin-right: -25px;
   padding-bottom: 70px;
-}
-
-.hot-products-wr {
 }
 
 .hot-products_list {
   display: flex;
   justify-content: space-between;
-
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .hot-products_item {
@@ -38,5 +32,23 @@
 
   p {
     margin: 0;
+  }
+
+  @media (max-width: 1099px) {
+    &:last-of-type {
+      display: none;
+    }
+  }
+
+  @media (max-width: 600px) {
+    &:nth-of-type(3) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 479px) {
+    &:nth-of-type(2) {
+      display: none;
+    }
   }
 }
