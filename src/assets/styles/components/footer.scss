@@ -7,12 +7,11 @@
     url("../pics/subscribe-bg.png") no-repeat;
   background-size: cover;
 
-  @media (max-width: 1200px) {
-    display: block;
+  @media (--l-sm) {
+    justify-content: stretch;
   }
-
-  @media (max-width: 920px) {
-    padding-left: 10vw;
+  @media (--sm) {
+    display: block;
   }
 }
 
@@ -22,11 +21,24 @@
   font-size: 29px;
   font-weight: 400;
   color: var(--c-white);
+
+  @media (--sm) {
+    width: auto;
+    font-size: 22px;
+  }
+
+  @media (--xs) {
+    text-align: center;
+  }
 }
 .subscribe_form {
-  width: 30%;
+  width: 40%;
   display: flex;
   justify-content: space-between;
+
+  @media (--l-sm) {
+    width: auto;
+  }
 }
 .subscribe_input {
   width: 280px;
@@ -40,10 +52,14 @@
   &:focus {
     outline: none;
   }
+
+  @media (--l-sm) {
+    width: auto;
+  }
 }
 
 .subscribe_button {
-  width: 1303px;
+  width: 160px;
   min-height: 48px;
   border-radius: 30px;
   border: none;
@@ -60,6 +76,12 @@
   display: flex;
   justify-content: space-between;
   padding: 90px 0 60px;
+
+  @media (--sm) {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+  }
 }
 .footer_about {
   display: flex;
@@ -67,6 +89,23 @@
   justify-content: space-between;
   width: 40%;
   height: auto;
+
+  @media (--sm) {
+    width: auto;
+    align-items: center;
+  }
+}
+
+.footer_logo {
+  @media (--sm) {
+    margin-bottom: 25px;
+  }
+}
+
+.footer_text {
+  @media (--sm) {
+    display: none;
+  }
 }
 
 .socials_list {
@@ -74,6 +113,10 @@
   margin: 0;
   padding-left: 0;
   list-style: none;
+
+  @media (--sm) {
+    margin-bottom: 20px;
+  }
 }
 
 .socials_item {
@@ -84,6 +127,11 @@
     width: 27px;
     height: 22px;
     fill: var(--c-mediumgray110);
+
+    @media (--sm) {
+      width: 23px;
+      height: 19px;
+    }
   }
   &--facebook {
     svg {
@@ -132,6 +180,11 @@
   width: 50%;
   //align-content: center;
   align-items: center;
+
+  @media (--sm) {
+    display: block;
+    text-align: center;
+  }
 }
 
 .footer_nav--item {
@@ -141,9 +194,14 @@
   &:hover {
     text-decoration: underline;
   }
+  @media (--sm) {
+    display: none;
+  }
 }
 
 .footer_nav--item_title {
+  justify-items: center;
+  padding: 5px 0;
   font-size: 14px;
   font-weight: 600;
 }
