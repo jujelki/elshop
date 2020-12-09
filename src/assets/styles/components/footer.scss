@@ -7,9 +7,6 @@
     url("../pics/subscribe-bg.png") no-repeat;
   background-size: cover;
 
-  @media (--l-sm) {
-    justify-content: stretch;
-  }
   @media (--sm) {
     display: block;
   }
@@ -177,9 +174,15 @@
   grid-auto-flow: column;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 60px repeat(5, 1fr);
+  grid-column-gap: 15px;
   width: 50%;
   //align-content: center;
   align-items: center;
+
+  @media (--l-sm) {
+    grid-template-rows: 40px repeat(5, 1fr);
+    font-size: 13px;
+  }
 
   @media (--sm) {
     display: block;
@@ -200,8 +203,8 @@
 }
 
 .footer_nav--item_title {
-  justify-items: center;
+  align-self: flex-start;
   padding: 5px 0;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
 }
