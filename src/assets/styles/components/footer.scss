@@ -7,8 +7,14 @@
     url("../pics/subscribe-bg.png") no-repeat;
   background-size: cover;
 
+  @media (--xs) {
+    display: block;
+    padding: 70px 50px;
+  }
+
   @media (--sm) {
     display: block;
+    padding: 80px 100px;
   }
 }
 
@@ -19,8 +25,13 @@
   font-weight: 400;
   color: var(--c-white);
 
+  @media (--l-sm) {
+    font-size: 24px;
+  }
+
   @media (--sm) {
     width: auto;
+    margin-bottom: 20px;
     font-size: 22px;
   }
 
@@ -35,6 +46,11 @@
 
   @media (--l-sm) {
     width: auto;
+  }
+  @media (--xs) {
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 .subscribe_input {
@@ -53,6 +69,11 @@
   @media (--l-sm) {
     width: auto;
   }
+
+  @media (--xs) {
+    margin-right: 0;
+    margin-top: 20px;
+  }
 }
 
 .subscribe_button {
@@ -66,6 +87,11 @@
 
   &:focus {
     outline: none;
+  }
+
+  @media (--xs) {
+    width: 180px;
+    margin-top: 20px;
   }
 }
 
