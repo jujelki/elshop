@@ -5,7 +5,6 @@
 @custom-media --m (min-width: 769px);
 @custom-media --l (min-width: 1025px);
 @custom-media --l-sm (width <= 1025px);
-@custom-media --xl (width => 1025px);
 
 html {
   box-sizing: border-box;
@@ -49,6 +48,10 @@ a {
 .container {
   max-width: 1448px;
   width: 100%;
+
+  @media (--l-sm) {
+    width: auto;
+  }
 }
 
 .aligned {
@@ -57,7 +60,7 @@ a {
   padding-left: 20px;
   padding-right: 20px;
 
-  @media (--xl-sm) {
+  @media (--l-sm) {
     margin-left: 10px;
     margin-right: 10px;
   }
