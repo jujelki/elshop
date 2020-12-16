@@ -1,9 +1,9 @@
-.page-header {
+.page-index .page-header {
   position: relative;
   height: 100vh;
   width: 100%;
   padding: 20px 40px;
-  color: var(--c-white);
+  color: var(--c-black);
 
   @media (--l) {
     padding: 40px 30px 0 30px;
@@ -19,6 +19,11 @@
     margin: 0;
   }
 }
+
+.page-index .page-header {
+  color: var(--c-white);
+}
+
 .main-nav {
   display: flex;
   justify-content: space-between;
@@ -64,8 +69,9 @@
 .site-list__item {
   a {
     display: block;
+    border-bottom: 1px solid transparent;
     &:hover {
-      border-bottom: 1px solid var(--c-white);
+      border-bottom: 1px solid var(--c-black);
     }
   }
 
@@ -80,6 +86,16 @@
 
     @media (--l) {
       margin-right: 4rem;
+    }
+  }
+}
+
+.page-index .site-list__item {
+  a {
+    display: block;
+    border-bottom: 1px solid transparent;
+    &:hover {
+      border-bottom: 1px solid var(--c-white);
     }
   }
 }

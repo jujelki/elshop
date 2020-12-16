@@ -1,0 +1,58 @@
+.auth-text {
+  font-size: 13px;
+  line-height: 25px;
+  text-align: center;
+  color: var(--c-darkgray130);
+}
+
+.auth-form_input {
+  border: 1px solid var(--c-lightgray150);
+  color: var(--c-lightgray150);
+}
+
+.form_field,
+.form_buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.form_field--centryfied {
+  justify-content: center;
+}
+
+.auth-socials_link {
+  display: flex;
+  width: 47%;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+  }
+}
+
+.button.auth-socials_link--facebook {
+  background-color: #3b5998;
+  color: var(--c-white);
+
+  svg {
+    fill: var(--c-white);
+  }
+}
+
+.button.auth-socials_link--google {
+  border: 1px solid #f1584d;
+}
+
+.login_button {
+  background-color: var(--c-orange);
+  font-size: 16px;
+}
+
+.sign-up {
+  margin-left: 10px;
+  font-weight: 500;
+}
