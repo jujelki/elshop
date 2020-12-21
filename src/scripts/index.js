@@ -2,7 +2,7 @@ import "core-js/stable";
 import "regenerator-runtime/runtime";
 
 // Styles
-import '../styles/main.scss';
+import '../assets/styles/main.scss';
 
 // App
 import $ from "jquery";
@@ -56,22 +56,23 @@ $(function () {
 
   const arrows = document.querySelectorAll('.slider-arrow');
   const [firstArrow] = arrows;
-  const arrowHeight = firstArrow.clientHeight;
 
-  function setSliderArrowsOffset() {
-    const sliderImageHeight = document.querySelector('.product_pic').offsetHeight;
-    const arrowsOffset = Number.parseInt(sliderImageHeight / 2 - arrowHeight);
+  if (arrows.length > 0) {
+    const arrowHeight = firstArrow.clientHeight;
 
-    arrows.forEach(function (arrow) {
-      arrow.style.top = `${arrowsOffset}px`
+    function setSliderArrowsOffset() {
+      const sliderImageHeight = document.querySelector('.product_pic').offsetHeight;
+      const arrowsOffset = Number.parseInt(sliderImageHeight / 2 - arrowHeight);
+
+      arrows.forEach(function (arrow) {
+        arrow.style.top = `${arrowsOffset}px`
+      })
+    }
+
+    setSliderArrowsOffset();
+
+    $(window).on('resize', function () {
+      setSliderArrowsOffset()
     })
   }
-
-  setSliderArrowsOffset();
-
-  $(window).on('resize', function () {
-    setSliderArrowsOffset()
-  })
-
-
 });

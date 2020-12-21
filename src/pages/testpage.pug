@@ -1,0 +1,42 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Login
+  link(href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap' rel='stylesheet')
+
+body
+  include ../partials/header.pug
+  .aligned-narrow
+    .auth-content
+      h2.section-name Log in
+      p.auth-text
+        | Lorem Ipsum is simply dummy text of the printing
+        | and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s
+      .auth-form
+        form(action='')
+          .form_field
+            input#login.input.input--wide.auth-form_input(type='text' placeholder='E-mail')
+          .form_field
+            input#password.input.input--wide.auth-form_input(type='text' placeholder='Password')
+          .form_field
+            div
+              input#rememberme(type='checkbox' name='forgot-password')
+              label(for='rememberme') Keep me signed in
+            a.auth_link(href='#') Forgot password?
+          .form_buttons.auth-socials
+            a.auth-socials_link.auth-socials_link--facebook.button(href='')
+              svg
+                use(href='../pics/icons/facebook.svg')
+              | Facebook
+            a.auth-socials_link.auth-socials_link--google.button(href='')
+              svg
+                use(href='../pics/icons/gmail.svg')
+              | Gmail
+          .form_buttons
+            button.button.button--wide.login_button(href='#' type='submit') Sign in
+          .form_field.form_field--centryfied
+            span
+              | Not a member yet?
+              a.auth_link(href='#') Sign up
+  script(src='../scripts/index.js')
