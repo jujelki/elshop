@@ -20,7 +20,11 @@
 .form_field--centryfied {
   justify-content: center;
 }
-
+.auth_link {
+  &:hover {
+    border-bottom: 1px solid var(--c-black);
+  }
+}
 .auth-socials_link {
   display: flex;
   width: 47%;
