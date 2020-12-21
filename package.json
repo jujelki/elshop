@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "parcel src/pages/*.html --out-dir=tmp",
-    "start:prototype": "parcel src/prototype.html --out-dir=tmp",
-    "build": "parcel build src/pages/index.html --out-dir=dist --public-url='./'",
+    "start": "parcel src/pages/*.pug",
+    "start:prototype": "parcel src/prototype.pug --out-dir=tmp",
+    "build": "parcel build src/pages/*.pug --out-dir=dist --public-url='./'",
     "lint:styles": "stylelint **/*.scss"
   },
   "keywords": [],
@@ -17,17 +17,18 @@
     "husky": "^4.3.0",
     "node-sass": "^4.14.1",
     "parcel-bundler": "latest",
-    "parcel-plugin-svg-sprite": "^1.4.1",
     "postcss-modules": "latest",
+    "postcss-preset-env": "^6.7.0",
     "posthtml-include": "^1.6.0",
     "stylelint": "^13.7.2",
-    "stylelint-config-standard": "^20.0.0",
-    "postcss-preset-env": "^6.7.0"
+    "stylelint-config-standard": "^20.0.0"
   },
   "dependencies": {
     "core-js": "latest",
     "jquery": "^3.5.1",
     "owl.carousel": "^2.3.4",
+    "parcel-plugin-svg-sprite": "^1.4.1",
+    "pug": "^3.0.0",
     "slick-carousel": "^1.8.1"
   }
 }

@@ -1,0 +1,28 @@
+header.page-header
+  nav.main-nav
+    a.main-nav__list.page-header__logo
+      .logo
+        svg.logo__pic
+          use(href='../pics/icons/logo.svg')
+        h1.page-header__title.logo__title E-shop
+    ul.main-nav__list.site-list
+      li.site-list__item
+        a(href='#') Man
+      li.site-list__item
+        a(href='#') Woman
+      li.site-list__item
+        a(href='#') Kids
+    ul.main-nav__list.user-list
+      li.user-list__item
+        form.page-header__search(action='' autocomplete='off')
+          input.search-input(type='search')
+          svg
+            use(href='../pics/icons/search.svg')
+      li.user-list__item
+        a(href='#')
+          svg
+            use(href='../pics/icons/cart.svg')
+      li.user-list__item
+        a(href='#')
+          svg
+            use(href='../pics/icons/account.svg')
