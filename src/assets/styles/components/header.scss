@@ -78,15 +78,15 @@
 
   &:not(:last-of-type) {
     @media (--m) {
-      margin-right: 1.5rem;
+      margin-right: 30px;
     }
 
     @media (--sm) {
-      margin-right: 1rem;
+      margin-right: 20px;
     }
 
     @media (--l) {
-      margin-right: 4rem;
+      margin-right: 40px;
     }
   }
 }
