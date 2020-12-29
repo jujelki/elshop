@@ -1,6 +1,8 @@
 import "core-js/stable";
 import "regenerator-runtime/runtime";
 
+import logoSvg from '../pics/icons/logo.svg'
+
 // Styles
 import '../assets/styles/main.scss';
 
