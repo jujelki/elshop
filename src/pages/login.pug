@@ -3,7 +3,6 @@ head
   meta(charset='UTF-8')
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
   title Login
-  link(href='../assets/styles/main.scss' rel='stylesheet')
   link(href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap' rel='stylesheet')
 
 body
@@ -21,18 +20,18 @@ body
           .form_field
             input#password.input.input--wide.auth-form_input(type='text' placeholder='Password')
           .form_field
-            div
+            .checkbox-wr
               input#rememberme(type='checkbox' name='forgot-password')
               label(for='rememberme') Keep me signed in
             a.auth_link(href='#') Forgot password?
           .form_buttons.auth-socials
             a.auth-socials_link.auth-socials_link--facebook.button(href='')
               svg
-                use(href='../pics/icons/facebook.svg')
+                use(href='./spritemap.svg#sprite-facebook')
               | Facebook
             a.auth-socials_link.auth-socials_link--google.button(href='')
               svg
-                use(href='../pics/icons/gmail.svg')
+                use(href='./spritemap.svg#sprite-gmail')
               | Gmail
           .form_buttons
             button.button.button--wide.login_button(href='#' type='submit') Sign in
@@ -40,4 +39,3 @@ body
             span
               | Not a member yet?
               a.auth_link(href='#') Sign up
-  script(src='../scripts/index.js')
