@@ -34,6 +34,10 @@ const config = {
       filename: 'signup.html',
       template: './src/pages/signup.pug'
     }),
+    new HtmlWebpackPlugin({
+      filename: 'reset-password.html',
+      template: './src/pages/reset-password.pug'
+    }),
     new SVGSpritemapPlugin('src/pics/icons/*.svg')
   ],
 
