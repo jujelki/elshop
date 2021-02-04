@@ -1,10 +1,23 @@
 @import "imports.scss";
+@import 'intl-tel-input/build/css/intlTelInput.css';
 
 @custom-media --xs (width <= 576px);
 @custom-media --sm (width <= 768px);
 @custom-media --m (min-width: 769px);
 @custom-media --l (min-width: 1025px);
 @custom-media --l-sm (width <= 1025px);
+
+.iti-flag {
+  background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/13.0.2/img/flags.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) 
+{
+  .iti__flag {
+    background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/13.0.2/img/flags.png");
+  }
+}
+
 
 html {
   box-sizing: border-box;
@@ -13,7 +26,7 @@ html {
 
 *,
 *:after,
-*:before {
+*::before {
   box-sizing: inherit;
 }
 
@@ -25,6 +38,11 @@ a {
   text-decoration: none;
   color: inherit;
   border-bottom: 1px solid transparent;
+}
+
+p, 
+ul {
+  margin: 0;
 }
 
 .page-wrapper {
@@ -48,7 +66,6 @@ a {
 
 .container {
   max-width: 1448px;
-  width: 100%;
 
   @media (--l-sm) {
     width: auto;
@@ -94,6 +111,7 @@ a {
   height: 50px;
   border-radius: 30px;
   border: none;
+  text-transform: uppercase;
 
   &:hover {
     opacity: 0.8;
@@ -102,6 +120,22 @@ a {
 
 .button--wide {
   width: 100%;
+}
+
+.button--contrast {
+  background-color: var(--c-orange);
+}
+.button--cart {
+  width: 175px;
+}
+
+.button--opinion {
+  width: 175px;
+}
+.button--fave {
+  width: 50px;
+  background-color: transparent;
+  border: 1px solid var(--c-lightgray70);
 }
 
 .input {
@@ -140,4 +174,17 @@ input[type="checkbox"] {
 
 .checkbox-wr {
   display: flex;
+}
+
+.wide {
+  width: 100%;
+}
+
+
+.prototype {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
