@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Elshop
+        link(href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap' rel='stylesheet')
+
+body
+  include ../partials/header.pug
+  .container.aligned
+    .breadcrumps-wr 
+      ul.breadcrumbs
+        li
+          a(href='#') Home
+        li
+          a(href='#') Men`s Tops
+        li
+          a(href='#') T-Shirt
+        li T-Shirt Summer Vibes
+  section.product-view
+    .product-view_container
+      .slider-nav_wr
+        .slider-nav
+          img.product_pic.product_pic--preview_aside(src='../pics/main-page_slider/man-gray-tshirt.jpg' alt='T-Shirt Summer Vibes')
+          img.product_pic.product_pic--preview_aside(src='../pics/main-page_slider/man-gray-tshirt-back.jpg' alt='Loose Knit')
+          
+      .product-view_slider_wr
+        .product-view_slider
+          img.product_pic--preview(src='../pics/main-page_slider/man-gray-tshirt.jpg' alt='T-Shirt Summer Vibes')
+          img.product_pic--preview(src='../pics/main-page_slider/man-gray-tshirt-back.jpg' alt='Loose Knit')
+          
+
+    .product_aside
+      span.sale-badge Sale
+      p.product_title T-Shirt Summer Vibes
+      .product-aside_price-wr
+        span.product_price--new  $89.99 
+        span.product_price--old  $119.99
+      .select-colors.product_aside--item
+        p.product_action-name Color:
+        ul.select-colors_list
+          li.select-colors_item
+            .select-colors_color
+              input#white(type='radio' name='color' value='white' checked='')
+              label(for='white')
+                div
+                  span
+          li.select-colors_item
+            .select-colors_color
+              input#blue(type='radio' name='color' value='blue' checked='')
+              label(for='blue')
+                div
+                  span
+          li.select-colors_item
+            .select-colors_color
+              input#black(type='radio' name='color' value='black' checked='')
+              label(for='black')
+                div
+                  span          
+          li.select-colors_item
+            .select-colors_color
+              input#gray(type='radio' name='color' value='gray' checked='')
+              label(for='gray')
+                div
+                  span
+      .select-size-wr.product_aside--item
+        p.product_action-name Size: 
+          a(href='#') Size table           
+        .select-size
+          select(name="size")
+            option(value="chooseSize") Choose size
+            option(value="XS") XS
+            option(value="S") S
+            option(value="M") M
+            option(value="L") L
+            option(value="XL") XL          
+      .action-buttons_wr.product_aside--item
+        p.product_action-name Quantity:
+        .action-buttons
+          .quantity-input
+            span.less - 
+            input(type="text" value="1")
+            span.more +
+          button.button.button--contrast.button--cart Add to cart
+          button.button.button--fave
+           svg.quantity-input_icon
+             use(xlink:href='./spritemap.svg#sprite-favourite')
+  .product_tab-panel.tabs
+    .tab-panel_head.tabs__btns
+      h2.tab-panel_btn.is-active Description     
+      h2.tab-panel_btn Reviews (2)
+    .tab-panel_body
+      .tab-panel_item.is-active
+        include ../partials/product-description.pug
+      .tab-panel_item.tab2    
+        include ../partials/product-rating.pug
+  .container.aligned
+    include ../partials/subscribe.pug
+    include ../partials/footer.pug
+    

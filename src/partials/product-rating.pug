@@ -1,0 +1,73 @@
+section.product_rating
+  .product_rating--wr
+    .product_rating--summary 
+      .rating_result
+        .result_value
+          span 4.5
+        .rating_stars(percent="90")
+        .result_text
+          span 
+            svg
+              use(xlink:href='./spritemap.svg#sprite-account')
+            |81 all opinions        
+      .rating_lines
+        .line
+          .line_result
+            svg.rating_star
+              use(xlink:href='./spritemap.svg#sprite-star')
+            | 5
+          .line_progress(percent="70") 
+        .line
+          .line_result
+            svg.rating_star
+              use(xlink:href='./spritemap.svg#sprite-star')
+            | 4
+          .line_progress(percent="20")  
+        .line
+          .line_result
+            svg.rating_star
+              use(xlink:href='./spritemap.svg#sprite-star')
+            | 3
+          .line_progress(percent="10")
+        .line
+          .line_result
+            svg.rating_star
+              use(xlink:href='./spritemap.svg#sprite-star')
+            | 2
+          .line_progress(percent="0")
+        .line
+          .line_result
+            svg.rating_star
+              use(xlink:href='./spritemap.svg#sprite-star')
+            | 1
+          .line_progress(percent="0")   
+    button.button.button--contrast.button--opinion Add opinion
+
+  .product_reviews
+    .product_reviews--item
+      .review_userpic
+        img(src='../pics/reviewer1.png' alt='Reviewer-1')
+      .review_info
+        p.review_name
+          | John Doe
+        .rating_stars.rating_stars--review(percent="80")
+        .review_text
+          |Just as described, arrived quickly, great service, thanks
+    .product_reviews--item
+      .review_userpic
+        img(src='../pics/reviewer2.png' alt='Reviewer-1')
+      .review_info
+        p.review_name
+          | Eveline Gosok
+        .rating_stars.rating_stars--review(percent="100")
+        .review_text
+          | AMAZING!! I totally recommend and I will definitely buy again!
+    .product_reviews--item
+      .review_userpic
+        img(src='../pics/reviewer3.png' alt='Reviewer-1')
+      .review_info
+        p.review_name
+          | Anne Okombo
+        .rating_stars.rating_stars--review(percent="100")
+        .review_text
+          | Great quality!

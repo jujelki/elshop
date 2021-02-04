@@ -38,6 +38,14 @@ const config = {
       filename: 'reset-password.html',
       template: './src/pages/reset-password.pug'
     }),
+    new HtmlWebpackPlugin({
+      filename: 'product-view.html',
+      template: './src/pages/product-view.pug'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'prototype.html',
+      template: './src/pages/prototype.pug'
+    }),
     new SVGSpritemapPlugin('src/pics/icons/*.svg')
   ],
 
@@ -58,7 +66,21 @@ const config = {
       {
         test: /.pug$/i,
         use: [
-          "pug-loader",
+          {
+            loader: "html-loader",
+            options: {
+              attributes: {
+                list: [
+                  {
+                    tag: 'img',
+                    attribute: 'src',
+                    type: 'src',
+                  },
+                ]
+              }
+            }
+          },
+          "pug-html-loader",
         ],
       },
       {
